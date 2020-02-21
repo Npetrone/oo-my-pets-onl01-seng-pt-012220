@@ -1,3 +1,5 @@
+require 'pry'
+
 class Owner
    
    attr_reader :name, :species
@@ -15,6 +17,10 @@ class Owner
  
  def say_species
    "I am a #{species}."
+ end
+ 
+ def cats
+   Cat.all.select {|owner| cats.owner == owner}
  end
  
  def self.all
