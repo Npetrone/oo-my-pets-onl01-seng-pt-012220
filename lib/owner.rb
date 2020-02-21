@@ -21,4 +21,8 @@ class Owner
    @@all
  end
  
+ def count
+   @@counter
+ end
+ 
 end
