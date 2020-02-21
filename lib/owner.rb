@@ -4,11 +4,13 @@ class Owner
   
  
  @@all = []
+ @@counter = 0
  
  def initialize(name)
    @name = name
    @species = "human"
    @@all << self
+   @@counter += 1 
  end
  
  def say_species
