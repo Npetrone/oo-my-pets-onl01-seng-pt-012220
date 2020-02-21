@@ -8,7 +8,6 @@ class Owner
  def initialize(name)
    @name = name
    @species = "human"
-   puts "I am a human."
    @@all << self
  end
  
